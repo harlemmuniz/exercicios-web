@@ -3,32 +3,32 @@
 ### :construction:  Em construção :hammer_and_wrench:  
   
 ### Javascript: Fundamentos :heavy_check_mark:  
-  [x] Var, Let e Const;
-  [x] Tipagem Fraca;
-  [x] Number, String, Boolean, Array, Object;
-  [x] Math;
-  [x] Template String;
-  [x] Null & Undefined;
-  [x] Funções e Objetos;
-  [x] Variáveis com Var e Let;
-  [x] Let e Var em Loop;
-  [x] Hoisting;
-  [x] Par Nome/Valor;
-  [x] Notação ponto;
-  [x] Operadores: Atribuição, destructuring, aritméticos, relacionais, lógidos, unários, ternários;
-  [x] Tratamento de erro: Try, Catch e Throw.  
+  - [x] Var, Let e Const;
+  - [x] Tipagem Fraca;
+  - [x] Number, String, Boolean, Array, Object;
+  - [x] Math;
+  - [x] Template String;
+  - [x] Null & Undefined;
+  - [x] Funções e Objetos;
+  - [x] Variáveis com Var e Let;
+  - [x] Let e Var em Loop;
+  - [x] Hoisting;
+  - [x] Par Nome/Valor;
+  - [x] Notação ponto;
+  - [x] Operadores: Atribuição, destructuring, aritméticos, relacionais, lógidos, unários, ternários;
+  - [x] Tratamento de erro: Try, Catch e Throw.  
 ### Javascript: Estruturas de Controle :heavy_check_mark:  
-  [x] If/Else/Else If, Switch, While, Do/While, For, For/In, Break e Continue.  ### Javascript: Função :heavy_check_mark:  
-  [x] Params e Return;
-  [x] Variáveis;
-  [x] This e bind;
-  [x] Funções arrow, funções anônimas, funções callback, funcões construtoras, funções factory;
-  [x] Call & Apply.  ### Javascript: Objeto :heavy_check_mark:  
-  [x] Constantes, notação literal, getters/setters;
-  [x] Herança;
-  [x] JSON;
-  [x] Classes.  ### Javascript: Array :heavy_check_mark:  
-  [x] forEach;
+  - [x] If/Else/Else If, Switch, While, Do/While, For, For/In, Break e Continue.  ### Javascript: Função :heavy_check_mark:  
+  - [x] Params e Return;
+  - [x] Variáveis;
+  - [x] This e bind;
+  - [x] Funções arrow, funções anônimas, funções callback, funcões construtoras, funções factory;
+  - [x] Call & Apply.  ### Javascript: Objeto :heavy_check_mark:  
+  - [x] Constantes, notação literal, getters/setters;
+  - [x] Herança;
+  - [x] JSON;
+  - [x] Classes.  ### Javascript: Array :heavy_check_mark:  
+  - [x] forEach;
   [x] Map;
   [x] Filter;
   [x] Reduce;
