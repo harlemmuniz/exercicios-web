@@ -28,13 +28,15 @@
   - [x] Constantes, notação literal, getters/setters;
   - [x] Herança;
   - [x] JSON;
-  - [x] Classes.  ### Javascript: Array :heavy_check_mark:  
+  - [x] Classes.  
+### Javascript: Array :heavy_check_mark:  
   - [x] forEach;
   - [x] Map;
   - [x] Filter;
   - [x] Reduce;
   - [x] Concat;
-  - [x] FlatMap.  ### Node :heavy_check_mark:  
+  - [x] FlatMap.  
+### Node :heavy_check_mark:  
   - [x] Sistema de Módulos;
   - [x] Módulos de Terceiros;
   - [x] Require;
@@ -49,7 +51,8 @@
   - [x] Padrão middleware;
   - [x] Postman;
   - [x] Projeto: API com Express;
-  - [x] Tarefas agendadas com temporizador.  ### ESNext :heavy_check_mark:  
+  - [x] Tarefas agendadas com temporizador.  
+### ESNext :heavy_check_mark:  
   - [x] Revisão;
   - [x] Rest/Spread;
   - [x] Tagged Template;
@@ -69,7 +72,8 @@
   - [x] DNS;
   - [x] HTTP Seguro (HTTPS);
   - [x] Web Service;
-  - [x] Computação em Nuvem.  ### HTML :heavy_check_mark:  
+  - [x] Computação em Nuvem.  
+### HTML :heavy_check_mark:  
   - [x] Anatomia da TAG;
   - [x] Anatomia de uma Página HTML;
   - [x] Um Pouco de CSS;
