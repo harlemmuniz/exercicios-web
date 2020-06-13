@@ -2,7 +2,7 @@
 
 ### :construction:  Em construção :hammer_and_wrench:  
   
-### Javascript: Fundamentos :heavy_check_mark:  
+### - [x] Javascript: Fundamentos :heavy_check_mark:  
   - [x] Var, Let e Const;
   - [x] Tipagem Fraca;
   - [x] Number, String, Boolean, Array, Object;
