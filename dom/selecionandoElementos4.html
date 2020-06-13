@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #04</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <p>Início</p>
+    </div>
+    <div>
+        <ul>
+            <li>Pedro</li>
+            <li>Ana</li>
+            <li>Bia</li>
+        </ul>
+    </div>
+    <div>
+        <p>Fim</p>
+    </div>
+    <script>
+        function log() {
+            console.log(this) /* apenas adicionando "console.log" aos elementos abaixo */
+        }
+
+        HTMLCollection.prototype.log = log
+        HTMLElement.prototype.log = log
+        NodeList.prototype.log = log
+        Node.prototype.log = log
+
+        const lista = document.querySelector('div ul') /* lista vai selecionar elemento dentro de div ul */
+        lista.parentNode.log() /* mostra o pai (div) da lista */
+        lista.childNodes.log() /* mostra os filhos inclusive os espaços (quebra de linha) entre eles */
+
+        const primeiro = lista.firstChild /* const primeiro recebe o primeiro filho da lista */
+        primeiro.log()
+
+        primeiro.nextSibling.log() /* mostra o segundo filho */
+        const ultimo = lista.lastChild /* ultimo recebe o ultimo filho da lista */
+        ultimo.log()
+        ultimo.previousSibling.log() /* mostra o irmão anterior (ao ultimo) */
+
+        lista.children.log() /* mostra os filhos da lista, porém sem os espaços */
+        lista.firstElementChild.log()
+        lista.lastElementChild.log()
+        lista.parentNode.previousElementSibling.log() /* lista é a ul, parentNode é o pai (a div), e o elemento irmão anterior é a div inicio */
+        lista.parentNode.nextElementSibling.log()
+
+        document.querySelectorAll('div ul li').log() /* seleciona todos os elementos li, dentro da ul da div lista */
+    </script>
+</body>
+
+</html>

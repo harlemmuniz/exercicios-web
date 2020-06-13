@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Mini SPA</title>
+    <link rel='stylesheet' href='../css/estilo.css'>
+    <style>
+        nav {
+            font-size: 2em;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #FFF;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body class="conteudo">
+    <nav>
+        <a href wm-link="series.html" wm-destino=".pagina">Séries</a> |
+        <a href wm-link="linguagens.html" wm-destino=".pagina">Linguagens</a>
+    </nav>
+    <div class="pagina"></div>
+    <script>
+        function navegarViaAjax(url, seletor, push = true) { // recebe uma url (series ou linguagens.html) e um seletor (.pagina)
+            if (!url || !seletor) return // se não tem url ou o seletor, retorna nada
+            const elemento = document.querySelector(seletor) // seleciona no documento o elemento seletor (.pagina)
+            fetch(url) // fez um fetch e passou a url
+                .then(resp => resp.text()) // responde em texto do html
+                .then(html => { // pega o html
+                    elemento.innerHTML = html // e adiciona o html no elemento seletor (.pagina)
+                    if (push) {
+                        history.pushState({
+                            seletor
+                        }, null, url)
+                    }
+                })
+        }
+        document.querySelectorAll('[wm-link]').forEach(link => { // seleciona todos os elementos que se chamam wm-link e para cada um
+            const url = link.attributes['wm-link'].value // pega o valores dos atributos de 'wm-link'
+            const seletorDestino = link.attributes['wm-destino'].value // pega o valores dos atributos de 'wm-destino'
+
+            link.onclick = e => { // ao clicar no link
+                e.preventDefault() // previne o comportamento padrão
+                navegarViaAjax(url, seletorDestino)
+            }
+        })
+
+        window.onpopstate = e => {
+            if (e.state) {
+                navegarViaAjax(window.location.href, e.state.seletor, false)
+            }
+        }
+    </script>
+</body>

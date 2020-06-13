@@ -1,0 +1,51 @@
+<table> <!-- "border="1", Adiciona borda, o número representa a espessura-->
+    <caption>Produtos</caption> <!--Titulo principal da tabela-->
+    <thead> <!--Cabeçalho -->
+        <tr> <!-- Nova Linha Cabeçalho -->
+            <th>Produto</th> <!-- Elemento 1 (Coluna) Linha Cabeçalho -->
+            <th>Preço</th> <!-- Elemento 2 (Coluna) Linha Cabeçalho -->
+            <th>Quantidade</th> <!-- Elemento 3 (Coluna) Linha Cabeçalho -->
+            <th>Total</th> <!-- Elemento 4 (Coluna) Linha Cabeçalho -->
+        </tr>
+    </thead>
+    <tbody> <!-- Corpo da tabela (Entram as linhas) -->
+        <tr> <!-- Nova linha da tabela-->
+            <td>iPad</td> <!-- Elemento 1 (Coluna) Linha 1 -->
+            <td>3289,90</td> <!-- Elemento 2 (Coluna) Linha 1 -->
+            <td>5</td> <!-- Elemento 3 (Coluna) Linha 1 -->
+            <td>16445,00</td> <!-- Elemento 4 (Coluna) Linha 1 -->
+        </tr>
+        <tr> <!-- Nova linha da tabela-->
+            <td>Samsung S9</td> <!-- Elemento 1 (Coluna) Linha 2 -->
+            <td> 2649,00</td> <!-- Elemento 2 (Coluna) Linha 2 -->
+            <td>8</td> <!-- Elemento 3 (Coluna) Linha 2 -->
+            <td>21192,00</td> <!-- Elemento 4 (Coluna) Linha 2 -->
+        </tr>
+    </tbody>
+    <tfoot> <!-- Rodapé da tabela, final-->
+        <tr>
+            <td colspan="3" rolspan="1">Total</td> <!-- Vai ocupar (mesclar) 3 colunas "colspan" e 1 linha "rolspan" -->
+            <td>37637,00</td>
+        </tr>
+    </tfoot>
+</table>
+
+<style>
+    table { /* vai aplicar em toda tabela */
+        border-collapse:collapse; /* border-collapse - collapse não tem borda*/
+    }
+    th, td { /* Vai aplicar em todas as linhas e colunas */
+        padding: 10px; /* espaçamento de 10 px */
+    }
+    thead tr { /* Vai aplicar apenas thead (cabeçalho) */
+        border-bottom: solid 3px #444; /* borda solida, 3px de espessura e cinza*/
+    }
+    tbody tr:hover { /* Vai aplicar apenas no tbody (parte interna da tabela) quando mouse passar em cima*/
+        background-color: #dedede; /* fundo cinza claro*/
+    }
+    tfoot{ 
+        background-color: #444; /* fundo cinza escuro */
+        color: white; /* cor da letra branca */
+        font-weight: bold; /* negrito */
+    }
+</style>

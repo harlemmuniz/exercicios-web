@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicios HTML</title>
+    <style>
+        #conteudo {
+            padding: 30px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercicios HTML</h1>
+    </header>
+    <nav>
+        <a href wm-nav="exercicios/teste.html"> 00 - Teste</a> | <!-- Link com o nome de 00 - Teste na página-->
+        <a href wm-nav="exercicios/texto1.html"> 01 - Texto 1</a> | 
+        <a href wm-nav="exercicios/texto2.html"> 02 - Texto 2</a> |
+        <a href wm-nav="exercicios/listas.html"> 03 - Listas</a> |
+        <a href wm-nav="exercicios/listaAninhada.html"> 04 - Lista Aninhada</a> |
+        <a href wm-nav="exercicios/links.html"> 05 - Links</a> |
+        <a href wm-nav="exercicios/tabela.html"> 06 - Tabelas</a> |
+        <a href wm-nav="exercicios/form/form.html"> 07 - Formulário</a> |
+        <a href wm-nav="exercicios/imagem.html"> 08 - Imagens</a> |
+        <a href wm-nav="exercicios/slider.html"> 09 - Slider</a> |
+        <a href wm-nav="exercicios/video.html"> 10 - Video</a> |
+        <a href wm-nav="exercicios/tagsNaoVisuais.html"> 11 - Tags Não Visuais</a>
+    </nav>
+    <section id="conteudo"></section> <!-- Aqui irá mostrar o conteúdo do link em texto ao clicar-->
+    <footer>
+        Curso de Web Moderno
+    </footer>
+    <script>
+    // Função faz basicamente quando clicar nos link, mostra o conteúdo que seria mostrado na mesma página, ao invés de abrir um novo link
+        document.querySelectorAll('[wm-nav]').forEach(link => { // vai associnar a cada um dos links a função abaixo 'a' na linha 14, 15
+            const conteudo = document.getElementById('conteudo') // obteve o conteudo através do getElementById
+
+            link.onclick = function (e) { // quando clicar no link vai executar uma função que
+                e.preventDefault() // vai prevenir o comportamento padrão de clicar em um link que seria abrir o link (vai permanecer na página)
+                fetch(link.getAttribute('wm-nav')) // gerou uma requisição AJAX em cima do atributo href, que da o link da página 'a' da linha 14, 15
+                    .then(resp => resp.text()) // em seguida chama a função then, que da uma resposta, que chama uma função resp que vai retornar o texto que há naquele link
+                    .then(html => conteudo.innerHTML = html) // html vai innerHTML altera o conteúdo de um elemento com o conteúdo tratado como HTML (vai pegar o conteudo dentro do HTML e jogar)
+            }
+        })
+    </script>
+</body>
+</html>

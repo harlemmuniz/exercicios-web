@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid #01</title>
+    <style>
+        /* https://caniuse.com/#feat=css-grid */
+        
+        html,
+        body {
+            margin: 20px;
+            height: calc(100% - 40px);
+            background-color: lightgray;
+        }
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border: solid 5px dodgerblue;
+            background: #fff;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-columns: repeat(4, 8.33% 8.33% 8.33%);
+            grid-template-columns: repeat(4, 8.33%);
+            grid-template-columns: repeat(11, 100px) 100px;
+            grid-template-columns: 200px 20% 1fr; /* primeira coluna 200px, segunda 20% e a terceira com o restante (fragmento) que sobrou */
+            grid-template-columns: 3fr 6fr 3fr;
+            grid-template-rows: 50% 25% 12.5% 12.5%;
+            grid-template-rows: 100px 1fr; /* a primeira recebe 1, a segunda recebe o fragmento do que sobrar, lenvando em consideração que a 3 e 4 recebem o valor do conteudo */
+            grid-template-rows: 100px auto; /* a primeira recebe 100px, e o restante recebeu automaticamente dividido o restante */
+        }
+
+        .d8 {
+            /* concatenar celulas */
+            grid-column-start: 2; /* vai iniciar a partir da linha (divisória da coluna) 2 */
+            grid-column-end: 4; /* e terminar na linha (divisória da coluna) 4 */
+            grid-column-end: span 2; /* a partir da que iniciou, vai pegar 2 quadrados da linha */
+            grid-row-start: 3; /* vai iniciar a partir da linha (divisória da linha) 3 */
+            grid-row-end: 5; /* e terminar na linha (divisória da linha) 5 */
+            grid-row-end: span 2; /* a partir da que iniciou, vai pegar 2 quadrados da linha */
+        }
+
+        .d10, .d11 { /* tomar cuidado pois pode sobrepor */
+            grid-column-start: 1; /* d10 e d11 vão começar na divisória de coluna 1 */
+            grid-column-end: 3; /* e terminar na divisória de coluna 3*/
+            grid-row-start: 5; /* d10 e d11 vão começar na divisória de linha 5 */
+            grid-row-end: span 1; /* e a partir da que avançar e ocupar 1 divisória */
+        }
+
+        .d10 { /* o 10 ficou atrás do d11 */
+            z-index: 10; /* definiu o grau de importancia do 10 em relação ao eixo z (ficar atrás ou na frente) */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+    <div class="d6">6</div>
+    <div class="d7">7</div>
+    <div class="d8">8</div>
+    <div class="d9">9</div>
+    <div class="d10">10</div>
+    <div class="d11">11</div>
+    <div class="d12">12</div>
+</body>
+
+</html>

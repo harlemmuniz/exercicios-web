@@ -1,0 +1,70 @@
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #03</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+        }
+        
+        .esquerda {
+            height: 100vh;
+            width: 50%;
+            background-color: coral;
+        }
+        
+        .direita {
+            height: 100vh;
+            width: 50%;
+            background-color: cornflowerblue;
+        }
+        
+        .item {
+            border: solid 5px black;
+            background-color: darkgrey;
+            color: white;
+            height: 100px;
+            font-size: 40px;
+            margin: 10px;
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="esquerda" wm-dropzone>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="direita" wm-dropzone></div>
+    <script>
+        const items = document.querySelectorAll('[wm-dropzone] .item')
+        items.forEach((item, index) => {
+            item.draggable = true // permitiu que os itens fossem arrastados
+            item.id = item.id || `draggable-item-${index}` // item-id recebe item-id, se não tiver cria
+            item.ondragstart = e => // quando começar (on start) a arrastar,
+                e.dataTransfer.setData('item-id', e.target.id) // setou no dataTransfer qual foi o ID do elemento que está arrastando
+        })
+
+        const dropzones = document.querySelectorAll('[wm-dropzone]') // dropzones vai receber todos os elementos que têm wm-dropzone (direita e esquerda)
+
+        dropzones.forEach(dropzone => { // para cada um desses elementos
+            dropzone.ondragover = e => e.preventDefault() // quando arrastar o elemento prevenir o evento padrão
+            dropzone.ondrop = function(e) { // quando soltar receber a função que
+                const id = e.dataTransfer.getData('item-id') // pega o id do elemento que ta sendo arrastado
+                const item = document.getElementById(id) // o item recebe o elemento pelo id
+                    // e.target.appendChild(item)
+                dropzone.appendChild(item) // e "cria" no dropzone em que foi solto o item
+            }
+        })
+    </script>
+</body>
+
+</html>

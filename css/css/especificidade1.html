@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Especificidade CSS</title>
+    <style>
+        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+
+        /*
+        Em linhas gerais
+        1. regras com !important
+        2. seletores mais especificos
+        3. ultima regra processada (empate)
+
+        */
+
+        p { /* Esse perde pois o nível de especificidade de tag é menor que classes */
+            background-color: #aaa;
+        }
+
+        .observacao { /* Esse ganha pois o nível de especificidade de classe é maior que tag */
+            background-color: #5F5;
+            border: dashed 5px;
+            padding: 20px;
+            font-size: 40px;
+        }
+
+        p.observacao { /* Esse ganha pois o nível de especificidade de tag+classe é maior que classe e tag */
+            padding: 5px 60px;
+            background: linear-gradient(to right, yellow, red);
+        }
+
+    </style>
+</head>
+
+<body>
+    <p class='observacao'>Olha essa observação!!!!</p>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        /* 
+        * - seletor universal, vai pegar todos os elementos do documento
+        .tag - seletor do tipo classe, seleciona todos elementos da classe tag
+        # - seletor de id, seleciona todos os elementos daquele id
+        #aninhado > div - vai pegar o elemento div diretamente ligado (filho direto) a aninhado
+        #aninhado section - vai pegar qualquer elemento ligado (qualquer filho) a aninhado
+        p + ul - são adjacentes, vai pegar o 1º ul(filho) que logo antes possui obrigatoriamente um p(pai)
+        p ~ ol - vai pegar o ol(qualquer filho, não precisa ser adjacente) do mesmo p(pai)
+        [feira] - vai pegar todos os elementos que possuem a propriedade feira
+        [feira=casa] - vai pegar todos os elementos que possuem a propriedade feira e o valor casa
+        [feira~=escritorio] - vai pegar todos os elementos que possuem a propriedade feira e o valor escritorio (parte de escritorio empresa)
+        [feira*=sa] - vai pegar todos os elementos que possuem parte a propriedade feira e parte do valor sa (caSA, escritório empreSA)
+        span:nth-child(1) - pega elemento do tipo span e que esteja na primeira posição e que tenha nolabel
+        section > :nth-child(odd) - pega elemento tipo span e em posições impares(com nolabel) ou pares (bom para fazer tabelas com cores alternadas)
+        section > :nth-child(even) - pega elemento do tipo span e em posições pares(com nolabel) ou impares (ou pares)
+        section > :nth-child(even), ul - pega elemento do tipo span e em posições pares(com nolabel) ou impares (ou pares) e os elementos uls
+        section > :nth-child(even) label - pega apenas o labal (etiqueta) do elemento do tipo span e em posições pares(com nolabel) ou impares (ou pares)
+        section > span:nth-of-type(2) - pega o segundo elemento do tipo span
+        */
+        section > :nth-child(even) {
+            color: #ff0;
+            background-color: #f77;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='tag'>
+        <div class='tag'>
+            <p class='tag'>1</p>
+            <ul class='tag' feira='casa'>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+            <ul class='tag' feira='escritorio empresa'>
+                <li>Café</li>
+                <li>Água</li>
+            </ul>
+            <ol id='aprovados' class='tag'>
+                <li>Maria</li>
+                <li>Pedro</li>
+                <li>Ana</li>
+            </ol>
+            <div id='aninhado' class='tag'>
+                <div class="tag">
+                    <section class='tag'>
+                        <span class='tag'>1</span>
+                        <p class='tag'>2</p>
+                        <span class='tag'>3</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

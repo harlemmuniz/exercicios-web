@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Texto</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <style>
+        /* ... */
+        * {
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        html {
+            font-size: 28px;
+        }
+
+        div {
+            font-size: 50px;
+        }
+
+        p {
+            /* valores padrões */
+            font-size: 1em; /* 1 em é 1 vez o tamanho padrão da referencia mais próxima*/
+            font-size: 100%; /* 100% = 1em */
+            font-size: 16px; /* 16px = 100%, valor padrão do browser é 16px */
+            font-size: 12pt; /* 12pt = 16px */
+
+            /* unidades absolutas */
+            font-size: 100px; /* tamanho do pixel é relativo */
+            font-size: 72pt; /* pontos = 1 in */
+            font-size: 1in; /* polegada */
+
+            /* unidades relativas */
+            font-size: 2.2em; /* 2,2 vezes o tamanho da referencia de tamanho de letra mais próxima, podendo ser do browser ou parente (neste caso da div = 50px) */
+            font-size: 2.2rem; /* 2.2 vezes o tamanho da referencia do HTML (seria 16px, mas alterei o tamanho da fonte do HTML para 28px) */
+            font-size: 50vh; /* 50% da altura (vH) do viewport */
+            font-size: 10vw; /* 10% da largura (vW) do viewport */
+        
+            font-family: monospace; /* fonte monoespaçado, ocupando o mesmo espaço */
+            font-family: Georgia, serif; /* fonte Georgia, serifada (uma pontinha saindo de algumas letras como u, etc) */
+            font-family: Verdana, sans-serif; /* fonte Verdana, não-serifada (sem a pontinha saindo de algumas letras como u, etc, mais reta) */
+            font-family: 'Indie Flower', cursive; /* fonte Indie Flower, retirada do google fonts conforme link la em cima referenciado, cursiva */
+            
+            font-weight: 100; /* peso da fonte, de 100 a 900, bold é negrito total */
+            font-style: italic;
+            text-transform: capitalize; /* primeiras letras maiusculas, uppercase = todas maiusculas */
+            text-decoration: underline overline line-through;
+
+            word-spacing: 10px; /* espaço entre as palavras */
+            letter-spacing: 20px; /* espaço entre as letras */
+            line-height: 2.5em; /* altura da linha, não da letra */
+            text-align: center; /* alinhamento do texto */
+        }
+
+        .botao {
+            font-size: 28px;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 35px;
+        }
+
+        .destaque {
+            color: #fff;
+            background-color: tomato;
+            box-shadow: 2px 2px 1px 1px #000;
+        }
+
+        .destaque:active { /* classe+pseudo-classe, quando a classe estiver ativa (no caso botao clicado) aplica CSS*/
+            box-shadow: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            Que texto
+            <br>legal!!!
+        </p>
+    </div>
+    <a href="http://google.com" class="botao destaque">Google</a>
+</body>
+
+</html>

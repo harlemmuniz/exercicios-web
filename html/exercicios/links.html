@@ -1,0 +1,21 @@
+<h1 id="inicio">Links</h1>
+
+<!-- URL Absoluta -->
+
+<a href="http://www.google.com.br">Google 1</a><br> <!-- Vai abrir o link na mesma aba -->
+<a href="http://www.google.com.br" target="_blank">Google 2</a><br><br> <!-- target="_blank" vai abrir o link em outra aba -->
+
+<!-- URL Relativa -->
+<a href="index.html">Voltar 1</a><br> <!-- Vai tentar acessar a pasta index dentro do sistema -->
+<a href="/index.html"> Voltar 2</a><br> <!-- Vai pegar o raiz da aplicação e tentar acessar o arquivo index -->
+<a href="../index.html"> Voltar 3</a><br><br> <!-- Vai voltar x pastas (../ = 1x) e abrir index -->
+
+<a href="mailto:email@empresa.com.br">Entre em contato</a><br><br>
+
+<div id="noticia" style="position: absolute;top:2000px;"> <!-- Posição absoluta, 2000 pixels do topo -->
+    <h1>Noticia Buemba!</h1>
+    <p>Não era nada... :)</p>
+    <a href="#inicio">Ir para inicio</a>
+</div>
+
+<a href="#noticia">Ir para noticia</a> <!-- Essa ta depois da div, porém a div foi jogada lá para baixo-->

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>XMLHttpRequest #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Estados</h1>
+
+    <script>
+        function ajax(config) {
+            const xhr = new XMLHttpRequest()
+                // recebe o parâmetro método (GET, POST...)
+                // o elemento do tipo URL
+                // e setou com true para a propriedade executar de forma assincrona
+            xhr.open(config.metodo, config.url, true)
+
+            // xhr ao carregar recebe um evento
+            xhr.onload = e => {
+                if (xhr.status === 200) { // vai avaliar se foi sucesso = 200
+                    config.sucesso(xhr.response) // se foi retorna a resposta do servidor
+                } else if (xhr.status >= 400) { // se não
+                    config.erro({ // retorna o código e texto do erro
+                        codigo: xhr.status,
+                        texto: xhr.statusText
+                    })
+                }
+            }
+
+            xhr.send() // como só vai ler informações, não precisa colocar nada
+        }
+
+        function criarTabela(estados) {
+            // vai acessar cada um dos objetos (estados) e criar uma linhas para cada um
+            const linhas = estados.map(estado => {
+                    // para cada um dos objetos vai criar criou as celular que vai ter nas linhas
+                    // Id
+                    const tdId = document.createElement('td')
+                    tdId.innerHTML = estado.id
+
+                    // Nome
+                    const tdNome = document.createElement('td')
+                    tdNome.innerHTML = estado.nome
+
+                    // Sigla
+                    const tdSigla = document.createElement('td')
+                    tdSigla.innerHTML = estado.sigla
+
+                    // criou a linha
+                    const tr = document.createElement('tr')
+
+                    // criou as celulas (td) dentro do pai (linha tr)
+                    tr.appendChild(tdId)
+                    tr.appendChild(tdNome)
+                    tr.appendChild(tdSigla)
+
+                    return tr
+
+                })
+                // vai criar um elemento com o nome table no documento
+            const tabela = document.createElement('table')
+                // cada linha será inserida como filhos em tabela
+            linhas.forEach(linha => tabela.appendChild(linha))
+                // inseriu a tabela no body (na página)
+            document.body.appendChild(tabela)
+        }
+
+        ajax({ // executa ajax e passou os parametros url, metódo, sucesso e erro
+            url: "dados/estados.json",
+            metodo: "get",
+            sucesso(resposta) { // se sucesso, volta isso abaixo:
+                const estados = JSON.parse(resposta) // vai pegar os dados em JSON e passar para objeto e atribuir a estados
+                criarTabela(estados) // cria a tabela
+            },
+            erro(e) { // se erro, volta os erros criados anteriormente
+                const msg = document.createTextNode(`${e.codigo}: ${e.texto}`)
+                    // Insere a mensagem no corpo da página
+                document.body.appendChild(msg)
+            }
+        })
+    </script>
+</body>

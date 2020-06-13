@@ -1,0 +1,24 @@
+h1 {
+    /* display:none; */
+    /* background-color: red; */
+    /* position: absolute;
+    top: 400px;
+    left: 400px */
+    font-size: 20px /* tamanho da fonte */
+}
+
+.fundoVermelho { /* . representa classe */
+    background-color: red; /* cor de fundo */
+}
+
+.negrito {
+    font-weight: bold; /* negrito */
+}
+
+#textoPrincipal { /* # representa id */
+    font-size: 40px; /* tamanho da fonte */
+    font-weight: bold; /* negrito */
+    background-color: #444; /* cor de fundo */
+    padding: 10px; /* espaçamento */
+    color: white; /* cor da letra */
+}
