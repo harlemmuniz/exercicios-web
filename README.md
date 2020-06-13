@@ -1,6 +1,6 @@
 # Material de estudo em Desenvolvimento Web
 
-### :construction:  Em construção :hammer_and_wrench:  
+### Conhecimento em contrução :hammer_and_wrench:  
   
 ### Javascript: Fundamentos :heavy_check_mark:  
   - [x] Var, Let e Const;
