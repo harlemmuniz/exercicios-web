@@ -18,7 +18,8 @@
   - [x] Operadores: Atribuição, destructuring, aritméticos, relacionais, lógidos, unários, ternários;
   - [x] Tratamento de erro: Try, Catch e Throw.  
 ### Javascript: Estruturas de Controle :heavy_check_mark:  
-  - [x] If/Else/Else If, Switch, While, Do/While, For, For/In, Break e Continue.  ### Javascript: Função :heavy_check_mark:  
+  - [x] If/Else/Else If, Switch, While, Do/While, For, For/In, Break e Continue.
+### Javascript: Função :heavy_check_mark:  
   - [x] Params e Return;
   - [x] Variáveis;
   - [x] This e bind;
