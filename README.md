@@ -1,118 +1,118 @@
 # Material de estudo em Desenvolvimento Web
 
-### :construction: Em construção :hammer_and_wrench:  
+### :construction:  Em construção :hammer_and_wrench:  
   
 ### Javascript: Fundamentos :heavy_check_mark:  
-  * Var, Let e Const;
-  * Tipagem Fraca;
-  * Number, String, Boolean, Array, Object;
-  * Math;
-  * Template String;
-  * Null & Undefined;
-  * Funções e Objetos;
-  * Variáveis com Var e Let;
-  * Let e Var em Loop;
-  * Hoisting;
-  * Par Nome/Valor;
-  * Notação ponto;
-  * Operadores: Atribuição, destructuring, aritméticos, relacionais, lógidos, unários, ternários;
-  * Tratamento de erro: Try, Catch e Throw.  
+  [x] Var, Let e Const;
+  [x] Tipagem Fraca;
+  [x] Number, String, Boolean, Array, Object;
+  [x] Math;
+  [x] Template String;
+  [x] Null & Undefined;
+  [x] Funções e Objetos;
+  [x] Variáveis com Var e Let;
+  [x] Let e Var em Loop;
+  [x] Hoisting;
+  [x] Par Nome/Valor;
+  [x] Notação ponto;
+  [x] Operadores: Atribuição, destructuring, aritméticos, relacionais, lógidos, unários, ternários;
+  [x] Tratamento de erro: Try, Catch e Throw.  
 ### Javascript: Estruturas de Controle :heavy_check_mark:  
-  * If/Else/Else If, Switch, While, Do/While, For, For/In, Break e Continue.  ### Javascript: Função :heavy_check_mark:  
-  * Params e Return;
-  * Variáveis;
-  * This e bind;
-  * Funções arrow, funções anônimas, funções callback, funcões construtoras, funções factory;
-  * Call & Apply.  ### Javascript: Objeto :heavy_check_mark:  
-  * Constantes, notação literal, getters/setters;
-  * Herança;
-  * JSON;
-  * Classes.  ### Javascript: Array :heavy_check_mark:  
-  * forEach;
-  * Map;
-  * Filter;
-  * Reduce;
-  * Concat;
-  * FlatMap.  ### Node :heavy_check_mark:  
-  * Sistema de Módulos;
-  * Módulos de Terceiros;
-  * Require;
-  * Exports;
-  * Arquivo package.json;
-  * Instância;
-  * Objeto Global;
-  * This;
-  * Dependências e scripts;
-  * Lendo e escrevendo arquivos;
-  * Frameworks Web;
-  * Padrão middleware;
-  * Postman;
-  * Projeto: API com Express;
-  * Tarefas agendadas com temporizador.  ### ESNext :heavy_check_mark:  
-  * Revisão;
-  * Rest/Spread;
-  * Tagged Template;
-  * Map;
-  * Set;
-  * For Of;
-  * Promises;
-  * Callbacks aninhadas;
-  * Async/Await.  
+  [x] If/Else/Else If, Switch, While, Do/While, For, For/In, Break e Continue.  ### Javascript: Função :heavy_check_mark:  
+  [x] Params e Return;
+  [x] Variáveis;
+  [x] This e bind;
+  [x] Funções arrow, funções anônimas, funções callback, funcões construtoras, funções factory;
+  [x] Call & Apply.  ### Javascript: Objeto :heavy_check_mark:  
+  [x] Constantes, notação literal, getters/setters;
+  [x] Herança;
+  [x] JSON;
+  [x] Classes.  ### Javascript: Array :heavy_check_mark:  
+  [x] forEach;
+  [x] Map;
+  [x] Filter;
+  [x] Reduce;
+  [x] Concat;
+  [x] FlatMap.  ### Node :heavy_check_mark:  
+  [x] Sistema de Módulos;
+  [x] Módulos de Terceiros;
+  [x] Require;
+  [x] Exports;
+  [x] Arquivo package.json;
+  [x] Instância;
+  [x] Objeto Global;
+  [x] This;
+  [x] Dependências e scripts;
+  [x] Lendo e escrevendo arquivos;
+  [x] Frameworks Web;
+  [x] Padrão middleware;
+  [x] Postman;
+  [x] Projeto: API com Express;
+  [x] Tarefas agendadas com temporizador.  ### ESNext :heavy_check_mark:  
+  [x] Revisão;
+  [x] Rest/Spread;
+  [x] Tagged Template;
+  [x] Map;
+  [x] Set;
+  [x] For Of;
+  [x] Promises;
+  [x] Callbacks aninhadas;
+  [x] Async/Await.  
 ### Conceitos sobre Web :heavy_check_mark:  
-  * Introdução à Web;
-  * Protocolo HTTP;
-  * Servidor Web;
-  * Client Side vs Server Side;
-  * Conteúdo Estático vs Dinâmico;
-  * HTML, CSS e JS;
-  * DNS;
-  * HTTP Seguro (HTTPS);
-  * Web Service;
-  * Computação em Nuvem.  ### HTML :heavy_check_mark:  
-  * Anatomia da TAG;
-  * Anatomia de uma Página HTML;
-  * Um Pouco de CSS;
-  * Estruturando os Exercícios;
-  * Texto Puro vs Browser;
-  * Tag para Textos #01 e #02;
-  * Listas;
-  * Listas Aninhadas e Desafio;
-  * Links #01 e #02;
-  * Tabela;
-  * Formulário #01, #02 e #03;
-  * Imagens;
-  * Desafio Slider #01 e #02;
-  * Vídeo;
-  * Desafio Controlar Vídeo;
-  * Tags não visuais.  
+  [x] Introdução à Web;
+  [x] Protocolo HTTP;
+  [x] Servidor Web;
+  [x] Client Side vs Server Side;
+  [x] Conteúdo Estático vs Dinâmico;
+  [x] HTML, CSS e JS;
+  [x] DNS;
+  [x] HTTP Seguro (HTTPS);
+  [x] Web Service;
+  [x] Computação em Nuvem.  ### HTML :heavy_check_mark:  
+  [x] Anatomia da TAG;
+  [x] Anatomia de uma Página HTML;
+  [x] Um Pouco de CSS;
+  [x] Estruturando os Exercícios;
+  [x] Texto Puro vs Browser;
+  [x] Tag para Textos #01 e #02;
+  [x] Listas;
+  [x] Listas Aninhadas e Desafio;
+  [x] Links #01 e #02;
+  [x] Tabela;
+  [x] Formulário #01, #02 e #03;
+  [x] Imagens;
+  [x] Desafio Slider #01 e #02;
+  [x] Vídeo;
+  [x] Desafio Controlar Vídeo;
+  [x] Tags não visuais.  
 ### CSS :heavy_check_mark:  
-  * CSS: Introdução;
-  * Anatomia CSS;
-  * CSS Interno, Externo e Inline;
-  * Criando a Classe .tag;
-  * Seletores CSS #01 e #02;
-  * Especificidades CSS #01 e #02;
-  * Herança;
-  * Box Model #01 e #02;
-  * Margin Collapse;
-  * Propriedade Display;
-  * Inline-block: Comporante Estranho;
-  * Altura & Largura;
-  * Box Sizing;
-  * Propriedade Overflow;
-  * Propriedade Float;
-  * Cores;
-  * Utilidades #01, #02 e #03;
-  * Texto;
-  * Position;
-  * Media Query;
-  * Desafio Menu #01 e #02;
-  * Desafio Card #01 e #02;
-  * Flex Box e CSS Grid;
-  * Flex Box Nomenclatura;
-  * Flex Box #01, #02 e #03;
-  * Desafio Menu (Flex Box);
-  * CSS Grid #01, #02 e #03.  
+  [x] CSS: Introdução;
+  [x] Anatomia CSS;
+  [x] CSS Interno, Externo e Inline;
+  [x] Criando a Classe .tag;
+  [x] Seletores CSS #01 e #02;
+  [x] Especificidades CSS #01 e #02;
+  [x] Herança;
+  [x] Box Model #01 e #02;
+  [x] Margin Collapse;
+  [x] Propriedade Display;
+  [x] Inline-block: Comporante Estranho;
+  [x] Altura & Largura;
+  [x] Box Sizing;
+  [x] Propriedade Overflow;
+  [x] Propriedade Float;
+  [x] Cores;
+  [x] Utilidades #01, #02 e #03;
+  [x] Texto;
+  [x] Position;
+  [x] Media Query;
+  [x] Desafio Menu #01 e #02;
+  [x] Desafio Card #01 e #02;
+  [x] Flex Box e CSS Grid;
+  [x] Flex Box Nomenclatura;
+  [x] Flex Box #01, #02 e #03;
+  [x] Desafio Menu (Flex Box);
+  [x] CSS Grid #01, #02 e #03.  
 ### Integrando HTML, CSS e JS :heavy_check_mark:  
   * DOM;
   * Selecionando Elementos #01, #02, #03  #04;
