@@ -135,17 +135,17 @@
   - [x] Ajax com jQuery;
   - [x] Carregando HTML via Ajax.  
 ### Gulp: :soon:  
-  - [ ] Introdução do Módulo;
-  - [ ] Documentação do Gulp;
-  - [ ] Entendendo o Gulp;
-  - [ ] Instalando Gulp e dependências;
-  - [ ] Fundamentos de Gulp #01 e #03;
-  - [ ] O que é Babel?
-  - [ ] Processando Javascript com Gulp;
-  - [ ] O que é Typescript?;
-  - [ ] Processando Typescript com Gulp;
-  - [ ] O que é SASS?
-  - [ ] Processando SASS com Gulpe #01 e #02;
+  - [x] Introdução do Módulo;
+  - [x] Documentação do Gulp;
+  - [x] Entendendo o Gulp;
+  - [x] Instalando Gulp e dependências;
+  - [x] Fundamentos de Gulp #01 e #03;
+  - [x] O que é Babel?
+  - [x] Processando Javascript com Gulp;
+  - [x] O que é Typescript?;
+  - [x] Processando Typescript com Gulp;
+  - [x] O que é SASS?
+  - [x] Processando SASS com Gulpe #01 e #02;
   - [ ] Projeto SPA;
   - [ ] Conclusão do Módulo.  
 ### Webpack :soon:  
