@@ -134,7 +134,7 @@
   - [x] Axios #01 e #02;
   - [x] Ajax com jQuery;
   - [x] Carregando HTML via Ajax.  
-### Gulp: :soon:  
+### Gulp: :heavy_check_mark:  
   - [x] Introdução do Módulo;
   - [x] Documentação do Gulp;
   - [x] Entendendo o Gulp;
@@ -146,22 +146,22 @@
   - [x] Processando Typescript com Gulp;
   - [x] O que é SASS?
   - [x] Processando SASS com Gulpe #01 e #02;
-  - [ ] Projeto SPA;
-  - [ ] Conclusão do Módulo.  
-### Webpack :soon:  
-  - [ ] Visão Geral;
-  - [ ] Estrutura Básica do Projeto;
-  - [ ] Sistema de Módulos;
-  - [ ] Configurando Pasta de Saída;
-  - [ ] Carregando Arquivo .CSS;
-  - [ ] Externalizando .CSS;
-  - [ ] Carregando Arquivo .SCSS (SASS);
-  - [ ] Desenvolvimento & Produção;
-  - [ ] Carregando Arquivos de Imagens;
-  - [ ] Adicionando WebServer.  
+  - [x] Projeto SPA;
+  - [x] Conclusão do Módulo.  
+### Webpack :heavy_check_mark:  
+  - [x] Visão Geral;
+  - [x] Estrutura Básica do Projeto;
+  - [x] Sistema de Módulos;
+  - [x] Configurando Pasta de Saída;
+  - [x] Carregando Arquivo .CSS;
+  - [x] Externalizando .CSS;
+  - [x] Carregando Arquivo .SCSS (SASS);
+  - [x] Desenvolvimento & Produção;
+  - [x] Carregando Arquivos de Imagens;
+  - [x] Adicionando WebServer.  
 ### jQuery :soon:  
   - [ ] O que é jQuery?
-  - [ ] Endendendo o jQuery;
+  - [ ] Entendendo o jQuery;
   - [ ] Selecionando Elementos #01 e #02;
   - [ ] Modificando HTML #01, #02, #03 (Desafio) e #03(Resposta);
   - [ ] Manipulando Atributos;
