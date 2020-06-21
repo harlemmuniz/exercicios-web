@@ -159,16 +159,16 @@
   - [x] Desenvolvimento & Produção;
   - [x] Carregando Arquivos de Imagens;
   - [x] Adicionando WebServer.  
-### jQuery :soon:  
-  - [ ] O que é jQuery?
-  - [ ] Entendendo o jQuery;
-  - [ ] Selecionando Elementos #01 e #02;
-  - [ ] Modificando HTML #01, #02, #03 (Desafio) e #03(Resposta);
-  - [ ] Manipulando Atributos;
-  - [ ] Manipulando CSS;
-  - [ ] Eventos #01, #02 e #03;
-  - [ ] Animação #01 e #02;
-  - [ ] Plugin #01 e #02.  
+### jQuery :heavy_check_mark:  
+  - [x] O que é jQuery?
+  - [x] Entendendo o jQuery;
+  - [x] Selecionando Elementos #01 e #02;
+  - [x] Modificando HTML #01, #02, #03 (Desafio) e #03(Resposta);
+  - [x] Manipulando Atributos;
+  - [x] Manipulando CSS;
+  - [x] Eventos #01, #02 e #03;
+  - [x] Animação #01 e #02;
+  - [x] Plugin #01 e #02.  
 ### Bootstrap :soon:  
   - [ ] Instalação;
   - [ ] Adicionando Navegação;
