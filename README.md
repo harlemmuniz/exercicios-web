@@ -169,25 +169,25 @@
   - [x] Eventos #01, #02 e #03;
   - [x] Animação #01 e #02;
   - [x] Plugin #01 e #02.  
-### Bootstrap :soon:  
-  - [ ] Instalação;
-  - [ ] Adicionando Navegação;
-  - [ ] Tipografia;
-  - [ ] Espaços (Margin & Padding);
-  - [ ] Título e Breadcrump;
-  - [ ] Cores;
-  - [ ] Flexbox;
-  - [ ] Imagens;
-  - [ ] Float;
-  - [ ] Sistema de Grid #01, #02, #03, #04, #05 e #06;
-  - [ ] Botões;
-  - [ ] Barra de Progresso;
-  - [ ] Alertas;
-  - [ ] Paginação;
-  - [ ] Tooltip;
-  - [ ] Slider;
-  - [ ] Accordion;
-  - [ ] Formulário.  
+### Bootstrap :heavy_check_mark:  
+  - [x] Instalação;
+  - [x] Adicionando Navegação;
+  - [x] Tipografia;
+  - [x] Espaços (Margin & Padding);
+  - [x] Título e Breadcrump;
+  - [x] Cores;
+  - [x] Flexbox;
+  - [x] Imagens;
+  - [x] Float;
+  - [x] Sistema de Grid #01, #02, #03, #04, #05 e #06;
+  - [x] Botões;
+  - [x] Barra de Progresso;
+  - [x] Alertas;
+  - [x] Paginação;
+  - [x] Tooltip;
+  - [x] Slider;
+  - [x] Accordion;
+  - [x] Formulário.  
 ### React :soon:  
   - [ ] Criando Projeto;
   - [ ] Primeiro Componente;
