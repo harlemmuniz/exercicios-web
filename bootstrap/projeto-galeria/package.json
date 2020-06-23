@@ -17,11 +17,7 @@
     "css-loader": "0.28.11",
     "file-loader": "1.1.11",
     "font-awesome": "4.7.0",
-<<<<<<< HEAD
-    "jquery": "^3.5.0",
-=======
     "jquery": "3.5.0",
->>>>>>> fce06c0396c0e92103a1cb04ed790fac96c2110a
     "mini-css-extract-plugin": "0.4.0",
     "node-sass": "^4.13.1",
     "optimize-css-assets-webpack-plugin": "4.0.1",

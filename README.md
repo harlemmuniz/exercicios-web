@@ -189,7 +189,7 @@
   - [x] Accordion;
   - [x] Formulário.  
 ### React :soon:  
-  - [ ] Criando Projeto;
+  - [x] Criando Projeto;
   - [ ] Primeiro Componente;
   - [ ] Componente com Parâmetro;
   - [ ] Múltiplos Componentes;
