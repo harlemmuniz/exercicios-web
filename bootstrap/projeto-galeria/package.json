@@ -11,13 +11,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^4.4.1",
+    "bootstrap": "4.3.1",
     "copy-webpack-plugin": "4.5.1",
     "cross-env": "5.1.5",
     "css-loader": "0.28.11",
     "file-loader": "1.1.11",
     "font-awesome": "4.7.0",
+<<<<<<< HEAD
     "jquery": "^3.5.0",
+=======
+    "jquery": "3.5.0",
+>>>>>>> fce06c0396c0e92103a1cb04ed790fac96c2110a
     "mini-css-extract-plugin": "0.4.0",
     "node-sass": "^4.13.1",
     "optimize-css-assets-webpack-plugin": "4.0.1",
@@ -28,6 +32,6 @@
     "uglifyjs-webpack-plugin": "1.2.5",
     "webpack": "4.8.3",
     "webpack-cli": "2.1.3",
-    "webpack-dev-server": "3.1.4"
+    "webpack-dev-server": "3.1.11"
   }
 }
