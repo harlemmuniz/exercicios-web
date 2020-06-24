@@ -190,8 +190,8 @@
   - [x] Formulário.  
 ### React :soon:  
   - [x] Criando Projeto;
-  - [ ] Primeiro Componente;
-  - [ ] Componente com Parâmetro;
+  - [x] Primeiro Componente;
+  - [x] Componente com Parâmetro;
   - [ ] Múltiplos Componentes;
   - [ ] Componente de Classe #01 e #02;
   - [ ] Componentes: Pai e Filho #01 e #02.  
