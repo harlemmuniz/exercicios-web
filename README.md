@@ -188,13 +188,13 @@
   - [x] Slider;
   - [x] Accordion;
   - [x] Formulário.  
-### React :soon:  
+### React :heavy_check_mark:  
   - [x] Criando Projeto;
   - [x] Primeiro Componente;
   - [x] Componente com Parâmetro;
-  - [ ] Múltiplos Componentes;
-  - [ ] Componente de Classe #01 e #02;
-  - [ ] Componentes: Pai e Filho #01 e #02.  
+  - [x] Múltiplos Componentes;
+  - [x] Componente de Classe #01 e #02;
+  - [x] Componentes: Pai e Filho #01 e #02.  
 ### VueJS :soon:  
   - [ ] Conceitos Básicos;
   - [ ] Binding;
